@@ -1,0 +1,137 @@
+/* full page */
+.gh-container {
+  height: 100vh;
+  background-color: #0d1117;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+
+/* logo */
+.gh-logo {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+/* title */
+.gh-title {
+  color: #c9d1d9;
+  margin-bottom: 20px;
+}
+
+/* card */
+.gh-box {
+  background-color: #161b22;
+  padding: 20px;
+  width: 320px;
+  border-radius: 6px;
+  border: 1px solid #30363d;
+  display: flex;
+  flex-direction: column;
+}
+
+/* labels */
+.gh-box label {
+  color: #c9d1d9;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+/* inputs */
+.gh-box input {
+  margin-top: 5px;
+  padding: 8px;
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 5px;
+  color: white;
+}
+
+/* button */
+.gh-btn {
+  margin-top: 15px;
+  padding: 10px;
+  background-color: #238636;
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.gh-btn:hover {
+  background-color: #2ea043;
+}
+
+/* footer */
+.gh-footer {
+  margin-top: 15px;
+  color: #8b949e;
+}
+
+.gh-footer a {
+  color: #58a6ff;
+  text-decoration: none;
+}
+
+
+/* Responsive */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .gh-box {
+    width: 90%;
+    padding: 18px;
+  }
+
+  .gh-title {
+    font-size: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 480px) {
+  .gh-container {
+    padding: 20px;
+    justify-content: flex-start;
+  }
+
+  .gh-logo {
+    width: 40px;
+    margin-top: 40px;
+  }
+
+  .gh-title {
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .gh-box {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .gh-box input {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  .gh-btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .gh-footer {
+    text-align: center;
+    font-size: 13px;
+  }
+}

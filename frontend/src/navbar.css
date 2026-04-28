@@ -1,0 +1,43 @@
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Vertically centers the logo and links */
+  padding: 10px 20px;   /* Added horizontal padding */
+  background-color: #161b22; /* Dark background similar to GitHub */
+  border-bottom: 1px solid #30363d; /* Lighter border color for visibility */
+}
+
+/* Ensure the Link doesn't add weird spacing/colors */
+nav a {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  height: 35px; /* Slightly smaller logo looks cleaner */
+  border-radius: 50%; /* 100% works, but 50% is standard for circles */
+}
+
+nav div {
+  display: flex;
+  align-items: center; /* Keeps items inside divs centered */
+}
+
+nav h3 {
+  margin-left: 10px;
+  color: white;
+  font-size: 1.2rem;
+}
+
+nav p {
+  margin-left: 20px; /* Reduced from 50px for better spacing */
+  font-weight: 500;
+  color: white;
+}
+
+nav h3:hover,
+nav p:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

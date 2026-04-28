@@ -1,0 +1,111 @@
+/* layout */
+#dashboard {
+  display: grid;
+  grid-template-columns: 260px 1fr 260px;
+  gap: 20px;
+  padding: 20px;
+  background-color: #0d1117;
+  min-height: 100vh;
+  color: #c9d1d9;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+/* sidebars */
+#dashboard aside {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  padding: 15px;
+}
+
+/* main */
+#dashboard main {
+  background-color: #0d1117;
+}
+
+/* headings */
+h2, h3 {
+  margin-bottom: 12px;
+  color: #c9d1d9;
+}
+
+/* repo cards */
+#dashboard aside div,
+#dashboard main div {
+  background-color: #161b22;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  padding: 12px;
+  margin-bottom: 10px;
+  transition: 0.2s ease;
+}
+
+#dashboard aside div:hover,
+#dashboard main div:hover {
+  border-color: #58a6ff;
+}
+
+/* repo title */
+h4 {
+  color: #58a6ff;
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+h4:hover {
+  text-decoration: underline;
+}
+
+/* description */
+p {
+  color: #8b949e;
+  font-size: 14px;
+}
+
+/* search */
+#search {
+  margin-bottom: 15px;
+}
+
+#search input {
+  width: 96%;
+  padding: 8px 10px;
+  background-color: #0d1117;
+  border: 1px solid #30363d;
+  border-radius: 6px;
+  color: white;
+  outline: none;
+}
+
+#search input:focus {
+  border-color: #58a6ff;
+}
+
+/* events */
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+li p {
+  font-size: 1rem;
+}
+
+/* responsive */
+@media (max-width: 900px) {
+  #dashboard {
+    grid-template-columns: 1fr;
+  }
+
+  #dashboard aside {
+    order: 2;
+  }
+
+  #dashboard main {
+    order: 1;
+  }
+}

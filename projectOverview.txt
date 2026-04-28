@@ -1,0 +1,40 @@
+## tools
+
+vscode - our ide which is used to write whole code for the project
+chrome browser - to test and view our web app(github clone)
+
+git/github - git its a tool to keep track of the changes in our codebase and github to share our code on web so that everyone can see it
+
+
+## frontend
+
+html/css/js to create basic web structure for our project
+react - frontend js library used to create ui components
+bootstrap - a frontend framework which has pre built ui components which helps us in developing our frontend faster 
+
+## backend 
+
+node js - its a js runtime env so that we can run js outside the browser to create server side app for our project (apis/ server)
+
+express js - a js framwork which is used to create apis and web apps
+
+# npm package
+
+yargs -> its used to read the user input command from the console/terminal 
+bcrypt - to encrypt / hash  our passwords and store them
+
+## database 
+
+mongodb -  a nosql db which is used to store data in document like format
+
+## testing
+
+jest -  a js framework for testing our web app and js codebase
+
+## deployment
+
+aws s3 bucket -simple storage service which is used to store images,files and documents
+
+aws ec2 - its used to create backend server
+
+aws amplify - its used to deploy our frontend

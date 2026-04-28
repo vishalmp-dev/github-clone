@@ -1,0 +1,43 @@
+import mongoose from "mongoose"
+import {Schema} from "mongoose"
+
+const UserSchema = new Schema({
+  username:{
+    type:String,
+    required:true,
+    unique:true,
+  },
+  email:{
+    type:String,
+    required:true,
+    unique:true,
+  },
+password:{
+    type:String,
+  },
+  repositories: [
+    {
+      default:{},
+      type: Schema.Types.ObjectId,
+      ref:"Repo"
+    },
+  ],
+  followedUsers: [
+    {
+      default:{},
+      type: Schema.Types.ObjectId,
+      ref:"User"
+    },
+  ],
+    staredRepos: [
+    {
+      default:{},
+      type: Schema.Types.ObjectId,
+      ref:"Repo"
+    },
+  ],
+});
+
+const User = mongoose.model("User",UserSchema);
+
+export default User;
