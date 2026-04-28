@@ -31,3 +31,20 @@ A full-stack GitHub-inspired web application where users can create repositories
 ---
 
 ## 📁 Project Structure
+
+github-clone/
+│
+├── backend/
+│ ├── controllers/
+│ ├── models/
+│ ├── routes/
+│ ├── config/
+│ ├── .env
+│ └── index.js
+│
+├── frontend/
+│ ├── components/
+│ ├── pages/
+│ └── src/
+│
+└── README.md
