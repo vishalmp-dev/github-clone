@@ -16,7 +16,7 @@ const Navbar = () => {
       </Link>
       <div>
         <Link to="/repo/create">
-          <p>Create a Repository</p>
+          <p>Create a Repo</p>
         </Link>
         <Link to="/profile">
           <p>Profile</p>
